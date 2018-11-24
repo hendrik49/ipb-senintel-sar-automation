@@ -7,5 +7,5 @@ Step1
 3. Downloading SAR using command line
    python step1_sentinel_download.py
 
-Step1
+Step2
 1. Loading XML to SNAP Application
