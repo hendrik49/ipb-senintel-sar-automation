@@ -8,4 +8,4 @@ Step1
    python step1_sentinel_download.py
 
 Step1
-1. Loading XML to SNAP Appliction
+1. Loading XML to SNAP Application
