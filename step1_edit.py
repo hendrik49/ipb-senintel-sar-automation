@@ -22,7 +22,7 @@ def format_date(in_date):
 # Start
 # Define initial date, end date, and parameter for download SAR
 cwd = os.getcwd()
-footprint = geojson_to_wkt(read_geojson('Lampung_extent_1.geojson'))
+footprint = geojson_to_wkt(read_geojson(config.geojson))
 type_sar = config.producttype # can cange to SLC
 orbit = config.orbitdirection
 in_date = config.start_date
