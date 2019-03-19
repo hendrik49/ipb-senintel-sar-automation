@@ -1,7 +1,8 @@
 import os
+import config
 
 cwd = os.getcwd()
-isFile = os.getcwd()+'/XMLproses/'
+isFile = os.getcwd()+config.xmlprocesspath
 listOfFiles=os.listdir(isFile)
 
 for d_file in listOfFiles:
