@@ -1,12 +1,13 @@
 from sentinelsat import SentinelAPI, read_geojson, geojson_to_wkt
 from datetime import date
+import config
 
-api = SentinelAPI('didok49', 'sentinel49')
-footprint = geojson_to_wkt(read_geojson('Lampung_extent_1.geojson'))
+api = SentinelAPI(config.username, config.password)
+footprint = geojson_to_wkt(read_geojson(config.geojson))
 products = api.query(footprint,
-                     date=('20180401', '20181230'),
-                     platformname = 'Sentinel-1',
-                     producttype='GRD',
-                     orbitdirection='Descending')
+                     date=(config.start_date, config.end_date),
+                     platformname = config.platformname,
+                     producttype=config.producttype,
+                     orbitdirection=config.orbitdirection)
 api.download_all(products)
 

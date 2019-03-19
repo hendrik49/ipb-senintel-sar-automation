@@ -3,10 +3,13 @@
 
 import os
 import xml.etree.ElementTree as etree
+import config
+
+
 cwd = os.getcwd()
-isFile = os.getcwd()+'/sentineldata/'
+isFile = os.getcwd() + config.sentineldirpath
 indx = 1
-tree = etree.parse(cwd+'/'+'Lampung_GRD_Or_Cal_Spk_TC_dB.xml')
+tree = etree.parse(cwd+'/'+config.xmlpath)
 elem = tree.findall(".//node")
 a=[]
 for prnt in elem:
@@ -20,11 +23,11 @@ gabs='_'.join(a)
 
 ##checkdir
 listOfFiles=os.listdir(isFile)
-xml_dir = cwd+'/XMLproses/'
+xml_dir = cwd+config.xmlprocesspath
 if not os.path.exists(xml_dir):
     os.makedirs(xml_dir)
 
-dim_dir = cwd+'/Praproses Result/'
+dim_dir = cwd+config.xmlpraprocessresult
 if not os.path.exists(dim_dir):
     os.makedirs(dim_dir)
     

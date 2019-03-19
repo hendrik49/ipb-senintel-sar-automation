@@ -4,6 +4,7 @@ from datetime import date, datetime
 import urllib2, urllib, os 
 import xml.etree.ElementTree as etree
 import itertools, threading, time, sys
+import config
 
 # Here for convert date
 def format_date(in_date):
@@ -22,27 +23,27 @@ def format_date(in_date):
 # Define initial date, end date, and parameter for download SAR
 cwd = os.getcwd()
 footprint = geojson_to_wkt(read_geojson('Lampung_extent_1.geojson'))
-type_sar = 'GRD' # can cange to SLC
-orbit = 'DESCENDING'
-in_date = datetime(2018,4,1,0,0,0,0)
-end_date = datetime(2018,10,31,23,59,59,519)
-url =  'https://scihub.copernicus.eu/apihub/' 
-username = 'didok49' # ask ITC for the username and password
-password = 'sentinel49' 
+type_sar = config.producttype # can cange to SLC
+orbit = config.orbitdirection
+in_date = config.start_date
+end_date = config.end_date
+url =  config.url
+username = config.username # ask ITC for the username and password
+password = config.password 
 
 #Get info product 
 api = SentinelAPI(username, password) # fill with SMARTSeeds user and password
 products = api.query(footprint,
                      producttype =type_sar,
                      orbitdirection =orbit,
-                     date='['+format_date(in_date)+' TO '+format_date(end_date)+']')
+                     date=(config.start_date, config.end_date))
 
 # convert to Pandas DataFrame
 df = api.to_dataframe(products)
 #df = df.drop_duplicates(subset=['orbitnumber'], keep='first')
 df = df.sort_values(['beginposition'], ascending=[False])
 #df = df.head(2)
-dirpath = cwd+'//sentineldata//'
+dirpath = cwd + config.sentineldirpath
 if not os.path.exists(dirpath):
     os.makedirs(dirpath)
 # Start Download
