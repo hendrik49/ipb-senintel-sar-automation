@@ -1,0 +1,13 @@
+username ='didok49' 
+password = 'sentinel49'
+geojson = 'Lampung_extent_1.geojson'
+start_date = '20180401'
+end_date='20181230'
+platformname = 'Sentinel-1'
+producttype='GRD'
+orbitdirection='Descending'
+url = 'https://scihub.copernicus.eu/apihub/' 
+sentineldirpath = "//sentineldata//"
+xmlpath="xml/Lampung_GRD_Or_Cal_Spk_TC_dB.xml" 
+xmlprocesspath='/XMLprocess/'
+xmlpraprocessresult='/Praproses Result/'
