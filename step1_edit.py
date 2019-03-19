@@ -57,7 +57,7 @@ for entry in range(0, len(df)):
     destinationpath = dirpath + id_sar + '.zip'
     
     if os.path.exists(destinationpath): 
-        print id_sar +' already downloaded'
+        print destinationpath +' already downloaded'
     else:
         #Download file and read
         try:
