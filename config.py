@@ -9,10 +9,10 @@ orbitdirection='Descending'
 url = 'https://scihub.copernicus.eu/apihub/' 
 sentineldirpath = "//sentineldata//"
 
-xmlpath="xml/Lampung_GRD_Or_Cal_Spk_TC_dB.xml" 
-xmlprocesspath='/XMLprocess/'
-xmlpraprocessresult='/Praproses_result/'
+xmlpath="1/xml/Lampung_GRD_Or_Cal_Spk_TC_dB.xml" 
+xmlprocesspath='1/XMLprocess/'
+xmlpraprocessresult='1/Praproses_result/'
 
-xmlpathsubset="subset_xml/Subset_Lampung_test_sitesMedium.xml" 
-xmlprocesspathsubset='/subset_XMLprocess/'
-xmlpraprocessresultsubset='/subset_praproses_result/'
+xmlpathsubset="2/subset_xml/Subset_Lampung_test_sitesMedium.xml" 
+xmlprocesspathsubset='2/subset_XMLprocess/'
+xmlpraprocessresultsubset='2/subset_praproses_result/'
