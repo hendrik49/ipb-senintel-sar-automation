@@ -1,0 +1,45 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources />
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>/Users/apple/Projects/IPB/ipb-senintel-sar-automation/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635.dim</file>
+    </parameters>
+  </node>
+  <node id="CreateStack">
+    <operator>CreateStack</operator>
+    <sources>
+      <sourceProduct refid="Read" />
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <masterBands />
+      <sourceBands />
+      <resamplingType>NEAREST_NEIGHBOUR</resamplingType>
+      <extent>Master</extent>
+      <initialOffsetMethod>Product Geolocation</initialOffsetMethod>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="CreateStack" />
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>/Users/apple/Projects/IPB/ipb-senintel-sar-automation/3/stack_praproses_result/target_subset_S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635_Cre.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description />
+    <node id="Read">
+            <displayPosition x="37.0" y="134.0" />
+    </node>
+    <node id="CreateStack">
+      <displayPosition x="233.0" y="133.0" />
+    </node>
+    <node id="Write">
+            <displayPosition x="455.0" y="135.0" />
+    </node>
+  </applicationData>
+</graph>
