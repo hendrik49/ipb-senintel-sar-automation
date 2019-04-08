@@ -1,0 +1,48 @@
+<graph id="Graph">
+  <version>1.0</version>
+  <node id="Read">
+    <operator>Read</operator>
+    <sources />
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>/Users/apple/Projects/IPB/ipb-senintel-sar-automation/Praproses_result/S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635.dim</file>
+    </parameters>
+  </node>
+  <node id="Subset">
+    <operator>Subset</operator>
+    <sources>
+      <sourceProduct refid="Read" />
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <sourceBands />
+      <region>0,0,28844,22429</region>
+      <geoRegion>POLYGON ((104.70 -5.045, 105.40 -5.045, 105.40 -5.412, 104.70 -5.412, 104.70 -5.045))</geoRegion>
+      <subSamplingX>1</subSamplingX>
+      <subSamplingY>1</subSamplingY>
+      <fullSwath>false</fullSwath>
+      <tiePointGridNames />
+      <copyMetadata>true</copyMetadata>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="Subset" />
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>/Users/apple/Projects/IPB/ipb-senintel-sar-automation/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635_Sub.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description />
+    <node id="Read">
+            <displayPosition x="37.0" y="134.0" />
+    </node>
+    <node id="Subset">
+      <displayPosition x="248.0" y="122.0" />
+    </node>
+    <node id="Write">
+            <displayPosition x="455.0" y="135.0" />
+    </node>
+  </applicationData>
+</graph>
