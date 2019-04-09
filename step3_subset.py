@@ -14,6 +14,6 @@ for d_file in listOfFiles:
             print("processing subset file "+filepath)
             os.system("gpt "+filepath)
             print("Complete processing subset file "+filepath)
-            #os.remove(filepath)
+            os.remove(filepath)
     except:
         continue

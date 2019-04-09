@@ -1,0 +1,45 @@
+<graph id="Graph">
+  <version>1.0</version>
+    <node id="ProductSet-Reader">
+    <operator>ProductSet-Reader</operator>
+    <sources />
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <fileList>C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180407T224132_20180407T224157_021367_024C83_3B2B_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180419T224133_20180419T224157_021542_0251F7_60C7_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180501T224133_20180501T224158_021717_025779_B9AA_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180513T224134_20180513T224159_021892_025D17_B23B_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180525T224135_20180525T224159_022067_02629D_417F_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180606T224135_20180606T224200_022242_02681D_26E0_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180618T224136_20180618T224201_022417_026D80_7030_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180630T224137_20180630T224201_022592_027297_4823_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180712T224137_20180712T224202_022767_0277CB_6D89_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180724T224138_20180724T224203_022942_027D4F_7D9C_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180805T224139_20180805T224204_023117_0282C3_1582_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180817T224140_20180817T224204_023292_02886D_D940_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180829T224140_20180829T224205_023467_028DFD_74F3_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180910T224141_20180910T224206_023642_029399_4EE2_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20180922T224141_20180922T224206_023817_029949_F865_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181004T224141_20181004T224206_023992_029F02_8B3A_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181016T224142_20181016T224206_024167_02A4B6_86E5_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181028T224142_20181028T224206_024342_02AA58_9F69_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181109T224141_20181109T224206_024517_02B096_FCDE_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181121T224141_20181121T224206_024692_02B706_5CDD_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181215T224140_20181215T224205_025042_02C342_08D4_App_Cal_Spe_Ter_Lin_Sub.dim,C:\Users\Sarauto2019\Documents/2/subset_praproses_result/subset_S1A_IW_GRDH_1SDV_20181227T224140_20181227T224205_025217_02C99A_59EE_App_Cal_Spe_Ter_Lin_Sub.dim</fileList>
+    </parameters>
+  </node>
+  <node id="CreateStack">
+    <operator>CreateStack</operator>
+    <sources>
+      <sourceProduct.2 refid="ProductSet-Reader" />
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <masterBands />
+      <sourceBands />
+      <resamplingType>NEAREST_NEIGHBOUR</resamplingType>
+      <extent>Master</extent>
+      <initialOffsetMethod>Product Geolocation</initialOffsetMethod>
+    </parameters>
+  </node>
+  <node id="Write">
+    <operator>Write</operator>
+    <sources>
+      <sourceProduct refid="CreateStack" />
+    </sources>
+    <parameters class="com.bc.ceres.binding.dom.XppDomElement">
+      <file>C:\Users\Sarauto2019\Documents/3/stack_praproses_result/target_2019-04-09.dim</file>
+      <formatName>BEAM-DIMAP</formatName>
+    </parameters>
+  </node>
+  <applicationData id="Presentation">
+    <Description />
+    <node id="CreateStack">
+      <displayPosition x="233.0" y="133.0" />
+    </node>
+    <node id="Write">
+            <displayPosition x="455.0" y="135.0" />
+    </node>
+    <node id="ProductSet-Reader">
+      <displayPosition x="76.0" y="136.0" />
+    </node>
+  </applicationData>
+</graph>
