@@ -18,6 +18,6 @@ xmlprocesspathsubset='/2/subset_XMLprocess/'
 xmlpraprocessresultsubset='/2/subset_praproses_result/'
 
 
-xmlpathstack="/3/subset_xml/stack.xml" 
+xmlpathstack="/3/subset_xml/stack_file_list.xml" 
 xmlprocesspathstack='/3/stack_XMLprocess/'
 xmlpraprocessresultstack='/3/stack_praproses_result/'

@@ -4,7 +4,7 @@
     <operator>Read</operator>
     <sources />
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <file>/Users/apple/Projects/IPB/ipb-senintel-sar-automation//sentineldata//S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635.zip.incomplete</file>
+      <file>C:\Users\Sarauto2019\Documents//sentineldata//S1A_IW_GRDH_1SDV_20180407T224132_20180407T224157_021367_024C83_3B2B.zip</file>
     </parameters>
   </node>
   <node id="Apply-Orbit-File">
@@ -128,7 +128,7 @@
       <sourceProduct refid="LinearToFromdB" />
     </sources>
     <parameters class="com.bc.ceres.binding.dom.XppDomElement">
-      <file>/Users/apple/Projects/IPB/ipb-senintel-sar-automation/Praproses_result/S1A_IW_GRDH_1SDV_20181203T224141_20181203T224205_024867_02BD11_A635.zip_App_Cal_Spe_Ter_Lin.dim</file>
+      <file>C:\Users\Sarauto2019\Documents/1/Praproses_result/S1A_IW_GRDH_1SDV_20180407T224132_20180407T224157_021367_024C83_3B2B_App_Cal_Spe_Ter_Lin.dim</file>
       <formatName>BEAM-DIMAP</formatName>
     </parameters>
   </node>
