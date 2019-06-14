@@ -153,39 +153,46 @@ train_features = data_df
 train_labels = data_test
 print("Creating traning features is complete....")
 
-#create RF Regressor
-print("create RF Regressor with 10000 esitimators... ")
-from sklearn.ensemble import RandomForestRegressor
-rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
 
-# Train the model on training data
-print("Train the model using training data... ")
-rf.fit(train_features, train_labels.values.ravel());
-rf.score(train_features, train_labels.values.ravel())
+#create RF Classifier
+from sklearn.ensemble import RandomForestClassifier
 
-# Use the forest's regressor to predict method on the test data
+print("create RF Classifier with 10000 esitimators... ")
+rfc =  RandomForestClassifier(n_estimators = 1000, random_state = 42, max_depth=15)
+
+rfc.fit(train_features, train_labels.values.ravel())
+rfc.score(train_features, train_labels.values.ravel())
+
+
+#Use the forest's classifier predict method on the test data
 print("Predict the data using the model... ")
-y_pred = rf.predict(test_features)
+yc_pred = rfc.predict(test_features)
 
 # Show prediction result
+print("Show the prediction result")
 pd.DataFrame(y_pred).head()
 
-from sklearn import metrics
+
+#create RF Regressor
+#print("create RF Regressor with 10000 esitimators... ")
+#from sklearn.ensemble import RandomForestRegressor
+#rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
+
+# Train the model on training data
+#print("Train the model using training data... ")
+#rf.fit(train_features, train_labels.values.ravel());
+#rf.score(train_features, train_labels.values.ravel())
+
+# Use the forest's regressor to predict method on the test data
+#print("Predict the data using the model... ")
+#y_pred = rf.predict(test_features)
+
+# Show prediction result
+#pd.DataFrame(y_pred).head()
+
+#from sklearn import metrics
 #print('Mean Absolute Error:', metrics.mean_absolute_error(y_test, y_pred))  
 #print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))  
 #print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred))) 
 
 
-#create RF Classifier
-#from sklearn.ensemble import RandomForestClassifier
-#rfc =  RandomForestClassifier(n_estimators = 1000, random_state = 42, max_depth=15)
-
-#rfc.fit(train_features, train_labels.values.ravel());
-#rfc.score(train_features, train_labels.values.ravel())
-
-
-# Use the forest's classifier predict method on the test data
-#yc_pred = rfc.predict(test_features)
-
-# Show prediction result
-#pd.DataFrame(y_pred).head()
