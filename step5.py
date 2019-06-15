@@ -170,7 +170,7 @@ yc_pred = rfc.predict(test_features)
 
 # Show prediction result
 print("Show the prediction result")
-pd.DataFrame(y_pred).head()
+pd.DataFrame(yc_pred).head()
 
 
 #create RF Regressor
